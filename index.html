@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="background">
+       <div class="main">
+            <input placeholder="Enter what you love to do" id="love" class="input"> 
+            <input placeholder="Enter what you want to do" id="desire" class="input">
+            <input placeholder="Enter what you are good at" id="skill" class="input">
+            <input placeholder="Enter your education" id="education" class="input">
+            <button onclick="career()" class="button">Submit</button>
+            <div id="Display" class="display"></div>
+       </div>
+    </div>
+    
+
+    <script>
+        
+        let Display = document.getElementById('Display');
+        function career(){
+         
+        let love = document.getElementById('love').value;
+        let desire = document.getElementById('desire').value;
+        let skill = document.getElementById('skill').value;
+        let education =document.getElementById('education').value;
+
+            if(love==='playing games' && desire==='develop own games' && skill==='maths' && education==='hsc'){
+                            Display.innerHTML=`<div onclick='hi()'><a href="sandesh.html" target="_blank" style="text-decoration:none;color:black">Developer</a></div>`
+                }else if(love==='dance' && desire==='dance' && skill==='dance' && education==='ssc'){
+                            Display.innerHTML="Dace"
+                }
+        }
+
+        function hi(){
+            document.write(``)
+        }
+
+    </script>
+</body>
+</html>
