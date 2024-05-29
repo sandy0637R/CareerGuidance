@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Navigation bar */
+        .nav {
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            background-color: rgb(72,60,50);
+            color: white;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .option{
+            text-decoration: none;
+            color: white;
+            padding: 10px 25px;
+        }
+        .option:hover{
+            background-color: rgb(49, 43, 38);
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        /* Navigation bar end */
+
+
+        /* Main section */
+        .main{
+            display: flex;
+            padding: 50px;
+            background-color: rgb(240,230,140);
+            color: rgb(72,60,50);
+            border: 5px solid rgb(72,60,50) ;
+            border-radius: 50px;
+            box-shadow: 20px 20px 40px;
+        }
+        .info{
+            margin: 100px 70px;
+            padding: 30px;
+            border: 5px solid rgb(72,60,50) ;
+            border-radius: 50px;
+            background-color: rgb(237, 231, 174);
+        }
+        .info-img{
+            margin-top: 30px;
+        }
+        .main-img{
+            min-height: 450px;
+            max-width: 550px;
+            border-radius: 50px;
+            box-shadow: 10px 10px 20px;
+        }
+        /* Main section End */
+
+        /* Latest News */
+        .latest-news{
+            padding: 50px 0px;
+            background-color: rgb(72,60,50);
+            border: 10px solid rgb(2, 2, 2);
+        }
+        .wrapper{
+            max-height: 240px;
+            display: flex;
+            overflow-x: auto;
+        }
+        .wrapper::-webkit-scrollbar{
+            width: 0;
+        }
+        .item-img{
+            min-width: 500px;
+            max-height: 210px;
+            margin: 2.5px;
+        }
+        /* Latest News End */
+
+
+        /* Subject */
+        .Subject-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color:  rgb(237, 231, 174);
+        }
+        .subject{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:  rgb(240,230,140);
+            width: 80%;
+            padding: 50px;
+            border-radius: 50px;
+            border: 5px solid rgb(49, 43, 38);
+            box-shadow: 10px 10px 20px;
+        }
+        .subject-section{
+            display: flex;
+        }
+        .subject-part{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid rgb(49, 43, 38);
+            border-radius: 50px;
+            background-color: rgb(184, 173, 49);
+            box-shadow: 10px 10px 20px;
+            text-align: center;
+        }
+        .subject-img{
+            max-height: 250px;
+            max-width: 300px;
+            border: 5px solid rgb(49, 43, 38);
+            border-radius: 50px;
+        }
+        .subject-content{
+            text-align: center;
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation bar -->
+    <div class="nav">
+        <div class="logo">
+            <p><span style="color: chartreuse;">Arch</span>eology</p>
+        </div>
+        <div class="nav-options">
+            <a href="#main" class="option">Home</a>
+            <a href="#latest-news" class="option">Latest</a>
+            <a href="#subject" class="option">Subjects</a>
+            <a href="" class="option">Footer</a>
+            <a href="" class="option">Sign In</a>
+        </div>
+    </div>
+    <!-- Navigation bar end -->
+
+
+    <!-- Mainsection -->
+    <div style="background-color: rgb(237, 231, 174);padding: 50px;" id="main">
+    <div class="main">
+        <div class="info">
+            <h3>WHAT IS</h3>
+            <h1 style="font-size: 3em;margin: 15px 0px;">ARCHAEOLOGY?</h1>
+            <p style="line-height: 1.5em;">Archaeology is the scientific study of human history and prehistory through the excavation 
+               and analysis of artifacts, structures, and other physical remains. It involves the systematic 
+                investigation of past human cultures by uncovering and interpreting material evidence, such as 
+                tools, pottery, buildings, and inscriptions, often buried in the ground.
+        </div>
+        <div class="info-img">
+            <a href="https://youtu.be/nvc1xIyntC0?si=F6uHlDD-0Lf9nd9W" style="color: black;"><img src="assets/archaeology.webp" alt="" class="main-img"></a>
+        </div>
+    </div>
+    </div>
+    <!-- Main section End -->
+    
+
+    <!-- Latest News -->
+    <div class="latest-news" id="latest-news">
+        <h1 style="font-size: 3em;color: white;text-align: center;margin-bottom: 30px;padding: 20px;border: 10px solid white;border-radius: 50px;">LATEST NEWS</h1>
+        <div class="wrapper">
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+        </div>
+    </div>
+    <!-- Latest News End -->
+
+    
+    <!-- Subjects -->
+    <div class="Subject-main" id="subject">
+    <div class="subject">
+        
+        <h1 style="font-size: 3em;text-align: center;border:5px solid rgb(49, 43, 38);padding: 15px 450px;border-radius: 50px;margin-bottom: 20px;">Subjects</h1>
+
+        <div class="subject-section">
+            
+            <div class="subject-part">
+                <a href="https://youtu.be/hBD78ppf3c4?si=64595-OI58vd8SRD" class="subject-anchor"><img src="assets/prehistoric.webp" alt="" class="subject-img"></a>
+                <h1 class="subject-content">PREHISTORIC ARCHAEOLOGY</h1>
+            </div>
+            <div class="subject-part">
+                <a href="https://youtu.be/QYXcZ6SYodg?si=jAm4zmjFHDlbWJhP" class="subject-anchor"><img src="assets/historical.webp" alt="" class="subject-img"></a>
+                <h1 class="subject-content">HISTORICAL ARCHAEOLOGY</h1>
+            </div>
+            <div class="subject-part">
+                <a href="https://youtu.be/sZI2E66QomE?si=KJW9T3FEVrAk2ux1" class="subject-anchor"><img src="assets/classical.jpg" alt="" class="subject-img"></a>
+                <h1 class="subject-content">CLASSICAL ARCHAEOLOGY</h1>
+            </div>
+        </div>
+
+        <div class="subject-section">
+            <div class="subject-part">
+                <a href="https://youtu.be/BRVgDurNMgI?si=iclsykDBi9RlKxdR" class="subject-anchor"><img src="assets/environmental.webp" alt="" class="subject-img"></a>
+                <h1 class="subject-content">ENVIRONMENTAL ARCHAEOLOGY</h1>
+            </div>
+            <div class="subject-part">
+                <a href="https://youtu.be/Nn3p1_2Ts3M?si=1ydcgGxQwm0yjrZa" class="subject-anchor"><img src="assets/bio.jpg" alt="" class="subject-img"></a>
+                <h1 class="subject-content">BIO ARCHAEOLOGY</h1>
+            </div>
+            <div class="subject-part">
+                <a href="https://youtu.be/t_Gml6R2O6U?si=pcNat8cuHlaS6CDN" class="subject-anchor"><img src="assets/underwater.webp" alt="" class="subject-img"></a>
+                <h1 class="subject-content">UNDERWATER ARCHAEOLOGY</h1>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
