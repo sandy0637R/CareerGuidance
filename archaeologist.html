@@ -125,8 +125,8 @@
             text-align: center;
         }
         .subject-img{
-            max-height: 250px;
-            max-width: 300px;
+            height: 250px;
+            width: 300px;
             border: 5px solid rgb(49, 43, 38);
             border-radius: 50px;
         }
@@ -134,7 +134,53 @@
             text-align: center;
             margin: 10px;
         }
+        /* Subjects End */
         
+
+        /* Greatest of All Time */
+        .greatest{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background-color:  #3F000F;
+            border: 10px solid #ECC8B5;
+        }
+        .archaeologist{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:  #79443B;
+            width: 80%;
+            padding: 50px;
+            border-radius: 50px;
+            border: 10px solid #ECC8B5;
+            box-shadow: 20px 20px 40px black;
+        }
+        .greatest-section{
+            display: flex;
+        }
+        .greatest-part{
+            padding: 10px;
+            margin: 20px;
+            border: 5px solid rgb(49, 43, 38);
+            border-radius: 50px;
+            background-color: #ECC8B5;
+            box-shadow: 10px 10px 20px;
+            text-align: center;
+        }
+        .greatest-img{
+            height: 250px;
+            width: 300px;
+            border: 5px solid rgb(49, 43, 38);
+            border-radius: 50px;
+        }
+        .greatest-content{
+            text-align: center;
+            margin: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -148,8 +194,8 @@
             <a href="#main" class="option">Home</a>
             <a href="#latest-news" class="option">Latest</a>
             <a href="#subject" class="option">Subjects</a>
-            <a href="" class="option">Footer</a>
-            <a href="" class="option">Sign In</a>
+            <a href="#Greatest" class="option">Greatest</a>
+            <a href="#footer" class="option">Sign In</a>
         </div>
     </div>
     <!-- Navigation bar end -->
@@ -178,12 +224,36 @@
     <div class="latest-news" id="latest-news">
         <h1 style="font-size: 3em;color: white;text-align: center;margin-bottom: 30px;padding: 20px;border: 10px solid white;border-radius: 50px;">LATEST NEWS</h1>
         <div class="wrapper">
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
-           <div class="item"><a href="" class="item-anchor"><img src="assets/archaeology.webp" alt="" class="item-img"></a></div>
+           <div class="item">
+               <a href="https://en.m.wikipedia.org/wiki/Saqqara#:~:text=The%20tomb%20contained%20artifacts%20from,statues%20depicting%20Isis%20and%20Harpocrates" class="item-anchor">
+               <img src="assets/saqqara.jpg" alt="" class="item-img">
+               </a>
+           </div>
+           <div class="item">
+               <a href="https://www.smithsonianmag.com/smart-news/the-children-of-pompeii-saw-gladiators-fight-to-the-death-and-they-drew-graffiti-about-it-180984432/" class="item-anchor">
+               <img src="assets/pompeii.webp" alt="" class="item-img">
+               </a>
+           </div>
+           <div class="item">
+               <a href="https://abcnews.go.com/International/winemaker-discovers-approximately-40000-year-mammoth-bones-cellar/story?id=110502612" class="item-anchor">
+               <img src="assets/mammoth.avif" alt="" class="item-img">
+               </a>
+           </div>
+           <div class="item">
+               <a href="https://archaeologymag.com/2024/05/lost-reliquary-of-stavangers-patron-saint/#:~:text=Archaeologists%20from%20the%20University%20of,beneath%20Stavanger%20Cathedral%20in%20Norway" class="item-anchor">
+               <img src="assets/stavangers-reliquary.webp" alt="" class="item-img">
+               </a>
+            </div>
+           <div class="item">
+               <a href="https://www.thearchaeologist.org/blog/this-is-not-a-huge-carpet-but-the-worlds-largest-mosaic-unearthed-in-turkey" class="item-anchor">
+               <img src="assets/mosaic-floor.jpeg" alt="" class="item-img">
+               </a>
+            </div>
+           <div class="item">
+               <a href="https://www.wpr.org/news/11-ancient-canoes-madison-lake-mendota-archaeologists" class="item-anchor">
+               <img src="assets/ancient-canoe.jpeg" alt="" class="item-img">
+               </a>
+            </div>
         </div>
     </div>
     <!-- Latest News End -->
@@ -228,5 +298,87 @@
 
     </div>
     </div>
+    <!-- Subjects end -->
+
+    
+    <!-- Greatest of all time  -->
+    <div class="greatest" id="Greatest">
+        <div class="archaeologist">
+            
+            <h1 style="font-size: 3em;text-align: center;border:5px solid #ECC8B5;padding: 15px 250px;border-radius: 50px;margin-bottom: 20px;color: #ECC8B5;">
+                Greatest Of All Time
+            </h1>
+    
+            <div class="greatest-section">
+                
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Howard_Carter" class="greatest-anchor"><img src="assets/Howard_carter.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Howard Carter</h1>
+                    <p class="greatest-para">(1874-1939)</p>
+                </div>
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Heinrich_Schliemann" class="greatest-anchor"><img src="assets/Heinrich_Schliemann.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Heinrich Schliemann</h1>
+                    <p class="greatest-para">(1822-1890)</p>
+                </div>
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Arthur_Evans" class="greatest-anchor"><img src="assets/Sir_Arthur_John_Evans.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Arthur Evans</h1>
+                    <p class="greatest-para">(1851-1941)</p>
+                </div>
+            </div>
+            
+            <div class="greatest-section">
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Kathleen_Kenyon" class="greatest-anchor"><img src="assets/Kathleen_Kenyon.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Kathleen Kenyon</h1>
+                    <p class="greatest-para">(1906-1978)</p>
+                </div>
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Flinders_Petrie" class="greatest-anchor"><img src="assets/Flinders_Petrie.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Flinders Petrie</h1>
+                    <p class="greatest-para">(1853-1942)</p>
+                </div>
+                <div class="greatest-part">
+                    <a href="https://en.wikipedia.org/wiki/Hiram_Bingham_III" class="greatest-anchor"><img src="assets/Hiram_Bingham.jpg" alt="" class="greatest-img"></a>
+                    <h1 class="greatest-content">Hiram BinhamIII</h1>
+                    <p class="greatest-para">(1875-1956)</p>
+                </div>
+            </div>
+    
+        </div>
+        </div>
+        <!-- Greatest of All Time End -->
+
+
+         <!--Footer section -->
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly;height: 250px;line-height: 1.5em; 
+                align-items:center;background-color:  rgb(2, 2, 2); color: rgb(249, 250, 251);" id="footer">
+        <div>
+            <img src="/assets/archaeology.webp" style="border-radius: 50px;" height="100px" width="100px">
+            <h2 style="font-size: x-small;">@Archaeology private limited</h2>
+        </div>
+        <div>
+            <ul>Home</ul>
+            <ul>Delivery Areas</ul>
+            <ul>Careers</ul>
+            <ul>Press</ul>
+            <ul>Customer Support</ul>
+        </div>
+
+        <div>
+            <ul>Privacy Policy</ul>
+            <ul>Terms of use</ul>
+            <ul>Responsible Disclosure Policy</ul>
+            <ul>Sandesh Raut</ul>
+        </div>
+
+        <div>
+            <input type="text" style="padding: 5px;border: none;">
+            <h2 style="margin: 0%; padding-top: 10px;" >Download App</h2>
+            <h1 style="margin: 10px 0px;"><span style="color: chartreuse;">ARCH</span>AEOLOGY</h1>
+        </div>
+    </div>
+    <!--Footer section end-->
 </body>
 </html>
