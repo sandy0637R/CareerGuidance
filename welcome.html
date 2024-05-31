@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-image: url(assets/welcome.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        .welcome{
+            margin-top: 65px;
+            width: 65%;
+            background-color: rgba(0,0,0,0.85);
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            border-radius: 50px;
+            padding:20px;
+            padding-bottom: 50px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .content{
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 100px 150px;
+        }
+        .button{
+            margin: 20px;
+            padding: 10px 110px;
+            border: none;
+            background-color: chartreuse;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            border-radius: 8px;
+        }
+        .button:hover{
+            background-color: #FF5F1F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px black;
+        }
+        .anchor{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome">
+    <div style="width: 100%; padding: 50px;">
+        <h1 style="font-size: 25px; margin: 20px 0px 20px 0px;">WELCOME TO OUR</h1>
+        <h1 style="font-size: 3em;"><span style="color: chartreuse;">Career</span>GUIDANCE</h1>
+    </div>
+
+    <div class="content">
+        <h3>HAVE YOU THAUGHT WHAT CAREER WILL YOU PERSUE ?</h3>
+        <button class="button" style="margin: 30px 80px 0px 0px;"><a href="field.html" class="anchor">Yes</a></button>
+        <button class="button" style="margin: 30px 0px 0px 80px;"><a href="survey.html" class="anchor">No</a></button>
+    </div>
+    </div>
+</body>
+</html>

@@ -3,45 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Guidance</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Front Page</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(assets/Career-Background.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }    
+        .cover{
+            display: flex;
+            height: 450px;
+            width: 700px;
+            background-color: rgba(0,0,0,0.95);
+            margin-top: 150px;
+            border-radius: 50px;
+            color: rgb(10, 10, 10);
+            box-shadow: 10px 10px 20px;
+        }
+        .cover-img{
+            width: 300px;
+            height: 450px;
+            border-radius: 50px 10px 10px 50px;
+        }
+        .text-part{
+            color: white;
+            padding: 20px;
+        }
+        .cover-button{
+            padding: 15px 125px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: chartreuse;
+            font-weight: 700;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px 20px 20px 10px;     
+        }
+        .cover-button:hover{
+            background-color: #FF5F1F;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px black;
+        }
+    </style>
 </head>
 <body>
-    <div class="background">
-       <div class="main">
-            <input placeholder="Enter what you love to do" id="love" class="input"> 
-            <input placeholder="Enter what you want to do" id="desire" class="input">
-            <input placeholder="Enter what you are good at" id="skill" class="input">
-            <input placeholder="Enter your education" id="education" class="input">
-            <button onclick="career()" class="button">Submit</button>
-            <div id="Display" class="display"></div>
-       </div>
+
+    <div class="cover">
+        <div class="img-part">
+            <img src="assets/Career-Main.jpg" alt="" class="cover-img">
+        </div>
+        <div class="text-part">
+           <h3 style="font-size: 15px;margin: 40px 0px 10px 0px;">Welcome To,</h3>
+           <h1 style="font-size: 35px;margin: 20px 0px 10px 0px;"><span style="color: chartreuse;">Career</span>GUIDANCE</h1>
+           <p style="margin: 20px 0px 20px 10px;line-height: 1.5em;">"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to
+             do what you believe is great work. And the only way to do great work is to love what you do."</p>
+
+            <button class="cover-button"><a href="login.html" style="text-decoration: none;color: white;">ENTER</a></button>
+        </div>
     </div>
-    
 
-    <script>
-        
-        let Display = document.getElementById('Display');
-        function career(){
-         
-        let love = document.getElementById('love').value;
-        let desire = document.getElementById('desire').value;
-        let skill = document.getElementById('skill').value;
-        let education =document.getElementById('education').value;
 
-            if(love==='playing games' && desire==='develop own games' && skill==='maths' && education==='hsc'){
-                            Display.innerHTML=`<div onclick='hi()'><a href="developer.html" target="_blank" style="text-decoration:none;color:black">Developer</a></div>`
-                }else if(love==='dance' && desire==='dance' && skill==='dance' && education==='ssc'){
-                            Display.innerHTML="Dace"
-                }else if(love==="Reading books" && desire==="want to discover dinosaurs fossils" && skill==="teamwork" && education==="hsc"){
-                            Display.innerHTML=`<div onclick='hi()'><a href="archaeologist.html" target="_blank" style="text-decoration:none;color:black">Archaeologist</a></div>`
-                }
-        }
-
-        function hi(){
-            document.write(``)
-        }
-
-    </script>
 </body>
 </html>

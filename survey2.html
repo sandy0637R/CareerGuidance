@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archaeology Servey</title>
+</head>
+<body>
+    <div>
+        <h1>Since</h1>
+        <p>"Based on the result of the last servey, it appears that you may not have an interest in software development</p>
+        <h3>We suggest...</h3>
+    </div>
+
+    <div>
+        Are you interested in uncovering ancient artifacts?<br>
+        <input type="radio" name="question1" id="correct1">Yes <br>
+        <input type="radio" name="question1">No <br>
+    </div>
+    
+    <div>
+        Do you enjoy learning about ancient civilizations?<br>
+        <input type="radio" name="question2" id="correct2">Yes <br>
+        <input type="radio" name="question2">No <br>
+    </div>
+
+    <div>
+        Have you ever participated in an archaeological dig?<br>
+        <input type="radio" name="question3" id="correct3">Yes <br>
+        <input type="radio" name="question3">No <br>
+    </div>
+
+    <div>
+        Would you like to study history and archaeology in university? <br>
+        <input type="radio" name="question4" id="correct4">Yes <br>
+        <input type="radio" name="question4">No <br>
+    </div>
+
+    <div>
+        Do you enjoy spending time outdoors?<br>
+        <input type="radio" name="question5" id="correct5">Yes <br>
+        <input type="radio" name="question5">No <br>
+    </div>
+
+    <div>
+        Are you patient and detail-oriented?<br>
+        <input type="radio" name="question6" id="correct6">Yes <br>
+        <input type="radio" name="question6">No <br>
+    </div>
+
+    <div>
+        Would you like to travel to different archaeological sites around the world?<br>
+        <input type="radio" name="question7" id="correct7">Yes <br>
+        <input type="radio" name="question7">No <br>
+    </div>
+
+    <div>
+        Are you curious about how people lived in the past?<br>
+        <input type="radio" name="question8" id="correct8">Yes <br> 
+        <input type="radio" name="question8">No <br>
+    </div>
+
+    <div>
+        Do you think you would enjoy working with scientific tools and methods in your research? <br>
+        <input type="radio" name="question9" id="correct9">Yes <br> 
+        <input type="radio" name="question9">No <br>
+    </div>
+
+    <div>
+        Are you Facinated by the idea of solving mysteries  from the past?<br>
+        <input type="radio" name="question10" id="correct10">Yes <br>
+        <input type="radio" name="question10">No <br>
+    </div>
+
+    <button onclick="result()">Submit</button>
+
+    <script>
+        function result(){
+        
+            let score=0;
+
+            if(document.getElementById('correct1').checked){
+            score++;
+            }
+            
+            if(document.getElementById('correct2').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct3').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct4').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct5').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct6').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct7').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct8').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct9').checked){
+            score++;
+            }
+
+            if(document.getElementById('correct10').checked){
+            score++;
+            }
+
+            if(score>=4){
+                window.location="archaeologist.html"
+            }
+
+            if(score<=3){
+                window.location="all.html"
+            }
+        }
+        
+    </script>
+</body>
+</html>
