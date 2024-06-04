@@ -4,75 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archaeology Servey</title>
+    <style>
+        *
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body{
+        background-image: url(assets/archaeology.webp);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.85);
+        padding: 50px;
+        margin-bottom: 100px;
+        border-radius: 50px;
+    }
+    .question{
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(0,0,0,0.85);
+        border-radius: 20px;
+        border: 2px solid white;
+    }
+    .question:hover{
+        transform: scale(1.04);
+        border: 2px solid chartreuse;
+        color: chartreuse;
+    }
+    .input-yes{
+        margin-bottom: 20px;
+    }
+    .button{
+        margin: 20px;
+        padding: 10px 160px;
+        border: none;
+        background-color: chartreuse;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        border-radius: 8px;
+    }
+    .button:hover{
+        background-color: #FF5F1F;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px black;
+    }
+</style>
+
 </head>
 <body>
-    <div>
-        <h1>Since</h1>
-        <p>"Based on the result of the last servey, it appears that you may not have an interest in software development</p>
-        <h3>We suggest...</h3>
-    </div>
-
-    <div>
-        Are you interested in uncovering ancient artifacts?<br>
-        <input type="radio" name="question1" id="correct1">Yes <br>
-        <input type="radio" name="question1">No <br>
-    </div>
     
-    <div>
-        Do you enjoy learning about ancient civilizations?<br>
-        <input type="radio" name="question2" id="correct2">Yes <br>
-        <input type="radio" name="question2">No <br>
-    </div>
+    <h1 style="font-size: 3em;margin: 30px 0px;text-align: center;color: white;"><span style="color: chartreuse;">Career</span>GUIDANCE</h1>
 
-    <div>
-        Have you ever participated in an archaeological dig?<br>
-        <input type="radio" name="question3" id="correct3">Yes <br>
-        <input type="radio" name="question3">No <br>
-    </div>
+    <div class="section">
+        <div class="question">
+            <p class="sentence">Are you interested in uncovering ancient artifacts?</p><br>
+            <input type="radio" name="question1" id="correct1" class="input-yes">Yes <br>
+            <input type="radio" name="question1" class="input-no">No <br>
+        </div>
+    
+        <div class="question">
+            <p class="sentence">Do you enjoy learning about ancient civilizations?</p><br>
+            <input type="radio" name="question2" id="correct2" class="input-yes">Yes <br>
+            <input type="radio" name="question2" class="input-no">No <br>
+        </div>
 
-    <div>
-        Would you like to study history and archaeology in university? <br>
-        <input type="radio" name="question4" id="correct4">Yes <br>
-        <input type="radio" name="question4">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Have you ever participated in an archaeological dig?</p><br>
+            <input type="radio" name="question3" id="correct3" class="input-yes">Yes <br>
+            <input type="radio" name="question3" class="input-no">No <br>
+        </div>
 
-    <div>
-        Do you enjoy spending time outdoors?<br>
-        <input type="radio" name="question5" id="correct5">Yes <br>
-        <input type="radio" name="question5">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Would you like to study history and archaeology in university?</p> <br>
+            <input type="radio" name="question4" id="correct4" class="input-yes">Yes <br>
+            <input type="radio" name="question4" class="input-no">No <br>
+        </div>
 
-    <div>
-        Are you patient and detail-oriented?<br>
-        <input type="radio" name="question6" id="correct6">Yes <br>
-        <input type="radio" name="question6">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Do you enjoy spending time outdoors?</p><br>
+            <input type="radio" name="question5" id="correct5" class="input-yes">Yes <br>
+            <input type="radio" name="question5" class="input-no">No <br>
+        </div>
 
-    <div>
-        Would you like to travel to different archaeological sites around the world?<br>
-        <input type="radio" name="question7" id="correct7">Yes <br>
-        <input type="radio" name="question7">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Are you patient and detail-oriented?</p><br>
+            <input type="radio" name="question6" id="correct6" class="input-yes">Yes <br>
+            <input type="radio" name="question6" class="input-no">No <br>
+        </div class="question">
 
-    <div>
-        Are you curious about how people lived in the past?<br>
-        <input type="radio" name="question8" id="correct8">Yes <br> 
-        <input type="radio" name="question8">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Would you like to travel to different archaeological sites around the world?</p><br>
+            <input type="radio" name="question7" id="correct7" class="input-yes">Yes <br>
+            <input type="radio" name="question7" class="input-no">No <br>
+        </div>
 
-    <div>
-        Do you think you would enjoy working with scientific tools and methods in your research? <br>
-        <input type="radio" name="question9" id="correct9">Yes <br> 
-        <input type="radio" name="question9">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Are you curious about how people lived in the past?</p><br>
+            <input type="radio" name="question8" id="correct8" class="input-yes">Yes <br> 
+            <input type="radio" name="question8" class="input-no">No <br>
+        </div>
 
-    <div>
-        Are you Facinated by the idea of solving mysteries  from the past?<br>
-        <input type="radio" name="question10" id="correct10">Yes <br>
-        <input type="radio" name="question10">No <br>
-    </div>
+        <div class="question">
+            <p class="sentence">Do you think you would enjoy working with scientific tools and methods in your research? </p><br>
+            <input type="radio" name="question9" id="correct9" class="input-yes">Yes <br> 
+            <input type="radio" name="question9" class="input-no">No <br>
+        </div>
 
-    <button onclick="result()">Submit</button>
+        <div class="question">
+            <p class="sentence">Are you Facinated by the idea of solving mysteries  from the past?</p><br>
+            <input type="radio" name="question10" id="correct10" class="input-yes">Yes <br>
+            <input type="radio" name="question10" class="input-no">No <br>
+        </div>
+        
+        <button onclick="result()" class="button">Submit</button>
+    </div>
 
     <script>
         function result(){
