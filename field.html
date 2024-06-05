@@ -41,6 +41,7 @@
         .button{
             margin: 20px;
             padding: 10px 80px;
+            font-size: 15px;
             border: none;
             background-color: chartreuse;
             font-weight: 600;
@@ -65,11 +66,27 @@
       <div class="field-div">
         WHICH FIELD YOU ARE WILLING TO CHOOSE?
         <div style="margin: 30px 0px;">
-            <button class="button"><a href="science.html" class="anchor">SCIENCE</a></button>
-            <button class="button"><a href="commerce.html"class="anchor">COMMERCE</a></button>
-            <button class="button"><a href="arts.html"class="anchor">ARTS</a></button>
+            <button class="button" onclick="science()">SCIENCE</button>
+            <button class="button" onclick="commerce()">COMMERCE</button>
+            <button class="button" onclick="arts()">ARTS</button>
         </div>
       </div>
     </div>
+
+    <script>
+
+        
+function science(){
+            window.location="science.html"
+        }
+
+        function commerce(){
+            window.location="commerce.html"
+        }
+
+        function arts(){
+            window.location="arts.html"
+        }
+    </script>
 </body>
 </html>

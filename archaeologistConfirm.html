@@ -44,6 +44,7 @@
             margin: 20px;
             padding: 10px 110px;
             border: none;
+            font-size: 16px;
             background-color: chartreuse;
             font-weight: 600;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -68,10 +69,21 @@
     </div>
 
     <div class="content">
-        <h3>It seems like you may have a good career as a Archaeologist from your interest. Would you like to be a developer?</h3>
-        <button class="button" style="margin: 30px 80px 0px 0px;"><a href="archaeologist.html" class="anchor">Yes</a></button>
-        <button class="button" style="margin: 30px 0px 0px 80px;"><a href="all.html" class="anchor">No</a></button>
+        <h3>It seems like you may have a good career as a Archaeologist as per your interest. Would you like to be a Archaeologist?</h3>
+        <button class="button" style="margin: 30px 80px 0px 0px;" onclick="yes()">Yes</button>
+        <button class="button" style="margin: 30px 0px 0px 80px;" onclick="no()">No</button>
     </div>
     </div>
+
+    <script>
+        function yes(){
+            window.location="archaeologist.html"
+        }
+
+        function no(){
+            window.location="all.html"
+        }
+    </script>
+    
 </body>
 </html>

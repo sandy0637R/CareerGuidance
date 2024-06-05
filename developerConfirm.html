@@ -43,6 +43,7 @@
         .button{
             margin: 20px;
             padding: 10px 110px;
+            font-size: 16px;
             border: none;
             background-color: chartreuse;
             font-weight: 600;
@@ -68,10 +69,20 @@
     </div>
 
     <div class="content">
-        <h3>It seems like you may have a good career as a Developer from your interest. Would you like to be a developer?</h3>
-        <button class="button" style="margin: 30px 80px 0px 0px;"><a href="developer.html" class="anchor">Yes</a></button>
-        <button class="button" style="margin: 30px 0px 0px 80px;"><a href="survey2.html" class="anchor">No</a></button>
+        <h3>It seems like you may have a good career as a Developer as per your interest. Would you like to be a Developer?</h3>
+        <button class="button" style="margin: 30px 80px 0px 0px;" onclick="yes()">Yes</button>
+        <button class="button" style="margin: 30px 0px 0px 80px;" onclick="no()">No</button>
     </div>
     </div>
+
+    <script>
+        function yes(){
+            window.location="developer.html"
+        }
+
+        function no(){
+            window.location="survey2.html"
+        }
+    </script>
 </body>
 </html>
