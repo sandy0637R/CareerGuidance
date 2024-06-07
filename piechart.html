@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestion</title>
+  <style>
+    *
+    {
+      padding: 0px;
+      margin: 0px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body{
+      background: url(assets/development.webp);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .page{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form{
+      margin: 50px 0px 100px 0px;
+      background-color: rgba(0,0,0,0.75);
+      padding: 50px 100px;
+      color: white;
+      width: 700px;
+      border: 2px solid white;
+      border-radius: 40px;
+      height: fit-content;
+    }
+    .form-part{
+      padding: 35px;
+      border: 4px solid white;
+      background-color: rgba(0,0,0,0.85);
+      border-radius: 20px;
+      margin: 50px 0px;
+    }
+    .form-part:hover{
+      transform: scale(1.02);
+      color: chartreuse;
+      border: 4px solid chartreuse;
+      box-shadow: 0px 0px 10px white;
+    }
+    .all-options{
+      display: flex;
+    }
+    .section{
+      display: flex;
+      flex-direction: column;
+    }
+    .question{
+      margin-bottom: 5px;
+      font-size: 30px;
+    }
+    .option{
+      margin-right: 10px;
+    }
+    .section-part{
+      margin: 5px 0px;
+    }
+    .button{
+            margin: 20px;
+            font-size: 17px;
+            padding: 10px 200px;
+            border: none;
+            background-color: chartreuse;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            border-radius: 8px;
+        }
+        .button:hover{
+            background-color: #FF5F1F;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+        .main-div{
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            background-color: rgba(0,0,0,0.90);
+            width: 55%;
+            border-radius: 35px;
+        }
+        .all-buttons{
+            padding: 20px;
+            border: 3px solid chartreuse;
+            border-radius: 20px;
+        }
+        .click{
+            margin: 20px;
+            font-size: 17px;
+            height: 40px;
+            width: 200px;
+            border: none;
+            background-color: chartreuse;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            border-radius: 8px;
+        }
+        .click:hover{
+            background-color: #FF5F1F;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        }
+  </style>
+</head>
+<body>
+
+    
+
+
+    <div class="page">
+
+      <div class="form">
+        <h1 style="font-size: 3em;text-align: center;color: white;"><span style="color: chartreuse;">Career</span>GUIDANCE</h1>
+        <!-- Question 1 -->
+        <div class="form-part">
+
+          <div class="question">
+            What is your interest?
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div class="all-options">
+            <div class="section" style="margin-right: 100px;">
+              <div class="section-part"><input type="radio" name="question1" id="webDev1" class="option" required>Content Creation</div>
+              <div class="section-part"><input type="radio" name="question1" id="gameDev1" class="option" required>Games</div>
+              <div class="section-part"><input type="radio" name="question1" id="appDev1" class="option" required>Human Psycology</div>
+            </div>
+            <div class="section" style="margin-left: 100px;">
+              <div class="section-part"><input type="radio" name="question1" id="cyber1" class="option" required>Digital Forensics</div>
+              <div class="section-part"><input type="radio" name="question1" id="dataSci1" class="option" required>Maths & Stats</div>              
+              <div class="section-part"><input type="radio" name="question1" id="none1" class="option" required>None of above</div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Question 1 End  -->
+
+        <!-- Question 2 -->
+        <div class="form-part">
+
+          <div class="question">
+            What do you like to do?
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div class="all-options">
+            <div class="section" style="margin-right: 100px;"> 
+              <div class="section-part"><input type="radio" name="question2" id="webDev2" class="option" required>Calligraphy</div>
+              <div class="section-part"><input type="radio" name="question2" id="gameDev2" class="option" required>Board game design</div>
+              <div class="section-part"><input type="radio" name="question2" id="appDev2" class="option" required>Automation</div>
+            </div>
+            <div class="section" style="margin-left: 100px;">
+              <div class="section-part"><input type="radio" name="question2" id="cyber2" class="option" required>Lock picking</div>
+              <div class="section-part"><input type="radio" name="question2" id="dataSci2" class="option" required>Puzzle solving</div>              
+              <div class="section-part"><input type="radio" name="question2" id="none2" class="option" required>None of above</div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Question 2 End  -->
+
+        <!-- Question 3 -->
+        <div class="form-part">
+
+          <div class="question">
+            What will you like to do?
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div class="all-options">
+            <div class="section" style="margin-right: 100px;">
+              <div class="section-part"><input type="radio" name="question3" id="webDev3" class="option" required>Design UX</div>
+              <div class="section-part"><input type="radio" name="question3" id="gameDev3" class="option" required>Design Games</div>
+              <div class="section-part"><input type="radio" name="question3" id="appDev3" class="option" required>Manage Products</div>
+            </div>
+            <div class="section" style="margin-left: 100px;">
+              <div class="section-part"><input type="radio" name="question3" id="cyber3" class="option" required>Ethical Hacking</div>
+              <div class="section-part"><input type="radio" name="question3" id="dataSci3" class="option" required>Work with AI</div>              
+              <div class="section-part"><input type="radio" name="question3" id="none3" class="option" required>None of above</div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Question 3 End  -->
+
+        <!-- Question 4 -->
+        <div class="form-part">
+
+          <div class="question">
+            What kind of project will you like to do?
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div class="all-options">
+            <div class="section" style="margin-right: 100px;">
+              <div class="section-part"><input type="radio" name="question4" id="webDev4" class="option" required>E-commerce</div>
+              <div class="section-part"><input type="radio" name="question4" id="gameDev4" class="option" required>Action Game</div>
+              <div class="section-part"><input type="radio" name="question4" id="appDev4" class="option" required>Utility Apps</div>
+            </div>
+            <div class="section" style="margin-left: 100px;">
+              <div class="section-part"><input type="radio" name="question4" id="cyber4" class="option" required>Penetration Testing</div>
+              <div class="section-part"><input type="radio" name="question4" id="dataSci4" class="option" required>Computer Vision</div>              
+              <div class="section-part"><input type="radio" name="question4" id="none4" class="option" required>None of above</div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Question 4 End  -->
+
+        <!-- Question 5 -->
+        <div class="form-part">
+
+          <div class="question">
+            What ability do you have ?
+          </div>
+          <hr style="margin-bottom: 15px;">
+          <div class="all-options">
+            <div class="section" style="margin-right: 100px;">
+              <div class="section-part"><input type="radio" name="question5" id="webDev5" class="option" required>Storytelling</div>
+              <div class="section-part"><input type="radio" name="question5" id="gameDev5" class="option" required>Imagination</div>
+              <div class="section-part"><input type="radio" name="question5" id="appDev5" class="option" required>Problem Solving</div>
+            </div>
+            <div class="section" style="margin-left: 100px;">
+              <div class="section-part"><input type="radio" name="question5" id="cyber5" class="option"required>Hacker Mindset</div>
+              <div class="section-part"><input type="radio" name="question5" id="dataSci5" class="option" required>Pattern Recognition</div>              
+              <div class="section-part"><input type="radio" name="question5" id="none5" class="option" required>None of above</div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Question 5 End  -->
+        
+        <center><button onclick="Developer()" class="button">Submit</button></center>
+
+      </div>
+    </div>
+
+      <!-- Piechart  -->
+
+       <center><div id="piechart" style="width: 900px; height: 500px;border-radius: 50px;"></div></center>
+
+      <!-- Piechart End  -->
+
+      <div id="option"></div>
+
+    <script>
+      
+
+      function Developer(){
+
+        // points 
+        var webDev=0;
+        var gameDev=0;
+        var appDev=0;
+        var cyber=0;
+        var dataSci=0;
+        var none=0;
+
+        if(document.getElementById("webDev1").checked){
+          webDev++;
+        }
+        if(document.getElementById("webDev2").checked){
+          webDev++;
+        }
+        if(document.getElementById("webDev3").checked){
+          webDev++;
+        }
+        if(document.getElementById("webDev4").checked){
+          webDev++;
+        }
+        if(document.getElementById("webDev5").checked){
+          webDev++;
+        }
+        if(document.getElementById("gameDev1").checked){
+          gameDev++;
+        }
+        if(document.getElementById("gameDev2").checked){
+          gameDev++;
+        }
+        if(document.getElementById("gameDev3").checked){
+          gameDev++;
+        }
+        if(document.getElementById("gameDev4").checked){
+          gameDev++;
+        }
+        if(document.getElementById("gameDev5").checked){
+          gameDev++;
+        }
+        if(document.getElementById("appDev1").checked){
+          appDev++;
+        }
+        if(document.getElementById("appDev2").checked){
+          appDev++;
+        }
+        if(document.getElementById("appDev3").checked){
+          appDev++;
+        }
+        if(document.getElementById("appDev4").checked){
+          appDev++;
+        }
+        if(document.getElementById("appDev5").checked){
+          appDev++;
+        }
+        if(document.getElementById("cyber1").checked){
+          cyber++;
+        }
+        if(document.getElementById("cyber2").checked){
+          cyber++;
+        }
+        if(document.getElementById("cyber3").checked){
+          cyber++;
+        }
+        if(document.getElementById("cyber4").checked){
+          cyber++;
+        }
+        if(document.getElementById("cyber5").checked){
+          cyber++;
+        }
+        if(document.getElementById("dataSci1").checked){
+          dataSci++;
+        }
+        if(document.getElementById("dataSci2").checked){
+          dataSci++;
+        }
+        if(document.getElementById("dataSci3").checked){
+          dataSci++;
+        }
+        if(document.getElementById("dataSci4").checked){
+          dataSci++;
+        }
+        if(document.getElementById("dataSci5").checked){
+          dataSci++;
+        }
+        if(document.getElementById("none1").checked){
+          none++;
+        }
+        if(document.getElementById("none2").checked){
+          none++;
+        }
+        if(document.getElementById("none3").checked){
+          none++;
+        }
+        if(document.getElementById("none4").checked){
+          none++;
+        }
+        if(document.getElementById("none5").checked){
+          none++;
+        }
+      // Points End 
+
+      // PieChart 
+
+       google.charts.load('current', {'packages':['corechart']});
+       google.charts.setOnLoadCallback(drawChart);
+ 
+       function drawChart() {
+ 
+         var data = google.visualization.arrayToDataTable([
+           ['Developer', 'points'],
+           ['Web Developer',     webDev],
+           ['Game Developer',     gameDev],
+           ['App Developer',      appDev],
+           ['Cyber Security',      cyber],
+           ['AI ML & DataScience',      dataSci],
+           ['None of above',      none],
+         ]);
+ 
+         var options = {
+           title: 'Your Interest'
+         };
+ 
+         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+ 
+         chart.draw(data, options);
+       }
+      //  PieChart End 
+     
+       var option=document.getElementById('option');
+      
+      //  Careers 
+       option.innerHTML=`
+      <center>
+        <div class="main-div">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 25px;color: chartreuse;margin-bottom:20px;">
+                 Which of the following careers would you like to persue?
+            </h1>
+            <div class="all-buttons">
+                <div>
+                    <button class="click" onclick="webDev()">Web Developer</button>
+                    <button class="click" onclick="gameDev()">Game Developer</button>
+                    <button class="click" onclick="appDev()">App Developer</button>
+                </div>
+                <div>
+                    <button class="click" onclick="cyber()">CyberSecurity</button>
+                    <button class="click" onclick="aiMlDataSci()">Ai ML & DataSci</button>
+                    <button class="click" onclick="none()">None of above</button> 
+                </div>     
+            </div> 
+        </div>
+      </center>`
+      // Careers End 
+
+      }
+
+      function webDev(){
+        window.location="developer.html"
+       }
+
+       function gameDev(){
+        window.location="https://en.wikipedia.org/wiki/Video_game_developer"
+       }
+
+       function appDev(){
+        window.location="https://in.indeed.com/career-advice/finding-a-job/what-is-an-application-developer"
+       }
+
+       function cyber(){
+        window.location="https://www.simplilearn.com/tutorials/cyber-security-tutorial/how-to-become-cyber-security-engineer"
+       }
+
+       function aiMlDataSci(){
+        window.location="https://towardsdatascience.com/artificial-intelligence-vs-machine-learning-vs-data-science-2d5b57cb025b"
+       }
+
+      function none(){
+        window.location="all.html"
+       }
+      
+
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
+</html>
